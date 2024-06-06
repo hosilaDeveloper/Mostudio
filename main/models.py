@@ -54,6 +54,7 @@ class Pricing(TimeStamp):
     resolution = models.CharField(max_length=255)
     term = models.CharField(max_length=255)
     price = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images')
 
 
 class Contact(TimeStamp):
